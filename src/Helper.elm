@@ -21,12 +21,12 @@ calc int1 int2 operator =
 languages : List { name : String, releaseYear : Int, currentVersion : String }
 languages =
     [ { name = "elm", releaseYear = 2012, currentVersion = "0.19.1" }
-    , { name = "Java", releaseYear = 1995, currentVersion = "17" }
+    , { name = "Java", releaseYear = 1995, currentVersion = "17.0.2" }
     ]
 
 
-languagesNames : List { name : String, releaseYear : Int, currentVersion : String } -> List String
-languagesNames inData =
+languageNames : List { name : String, releaseYear : Int, currentVersion : String } -> List String
+languageNames inData =
     List.map .name inData
 
 
@@ -92,8 +92,8 @@ type alias Computer =
 myLaptop : Computer
 myLaptop =
     { ram = "16GB"
-    , model = "Thin 15 B12VE"
-    , brand = "MSI"
+    , model = "Predator Helios"
+    , brand = "Acer"
     , screenSize = "15.6"
     }
 
